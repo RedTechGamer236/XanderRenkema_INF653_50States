@@ -4,7 +4,6 @@ const app = express();
 const path = require("path");
 const { logger } = require("./middleware/logEvents");
 const errorHandler = require("./middleware/errorHandler");
-const corsOptions = require("./config/corsOptions");
 const connectDB = require("./config/dbConfig");
 const { default: mongoose } = require("mongoose");
 const PORT = process.env.PORT || 3000;
